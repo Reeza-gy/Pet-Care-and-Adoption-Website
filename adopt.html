@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-GB" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Adopt a Pet | Paws and Homes Pet Care and Adoption</title>
+  <meta name="description" content="Meet the dogs and cats available for adoption at Paws and Homes. Filter by animal type and send an enquiry about your favourite pet.">
+  <meta name="theme-color" content="#164E63">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%90%BE%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html"><span class="logo-icon" aria-hidden="true">🐾</span> Paws and Homes</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="nav-toggle-icon" aria-hidden="true"></span>
+        <span class="nav-toggle-text">Menu</span>
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="adopt.html" aria-current="page">Adopt a Pet</a></li>
+          <li><a href="care.html">Pet Care</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+    <!-- Page introduction -->
+    <section class="page-intro" aria-labelledby="page-heading">
+      <div class="container">
+        <p class="eyebrow">Adopt a pet</p>
+        <h1 id="page-heading">Meet Our Adoptable Pets</h1>
+        <p class="lead">Each of these dogs and cats has been cared for by our team and is ready to find a forever home. Use the buttons below to filter by animal type, then send an enquiry about any pet you would like to meet.</p>
+      </div>
+    </section>
+
+    <!-- Pet listings with filters -->
+    <section class="section" aria-labelledby="pets-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="pets-heading">Available Pets</h2>
+          <p>Every profile describes the pet's age and personality to help you find a good match.</p>
+        </div>
+
+        <div class="filter-bar">
+          <div class="filter-group" role="group" aria-labelledby="filter-label">
+            <span id="filter-label" class="filter-label">Filter by type:</span>
+            <button type="button" class="filter-btn is-active" data-filter="all" aria-pressed="true">All Pets</button>
+            <button type="button" class="filter-btn" data-filter="dog" aria-pressed="false">Dogs</button>
+            <button type="button" class="filter-btn" data-filter="cat" aria-pressed="false">Cats</button>
+          </div>
+          <p id="filter-status" class="filter-status" role="status" aria-live="polite">Showing all 6 pets.</p>
+        </div>
+
+        <div class="pet-grid" id="pet-list">
+          <article class="pet-card" data-pet-type="dog">
+            <div class="media">
+              <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Bella, a friendly two-year-old dog available for adoption" width="800" height="600" loading="lazy" decoding="async">
+            </div>
+            <div class="pet-card-body">
+              <h3>Bella</h3>
+              <dl class="pet-meta">
+                <div class="tag"><dt>Type</dt><dd>Dog</dd></div>
+                <div class="tag tag--age"><dt>Age</dt><dd>2 years</dd></div>
+              </dl>
+              <p>Gentle, affectionate and calm indoors. Bella enjoys relaxed walks, belly rubs and curling up beside her favourite person. She would suit a quiet home with older children.</p>
+              <a class="btn btn-primary" href="contact.html?pet=Bella">Enquire About Bella</a>
+            </div>
+          </article>
+
+          <article class="pet-card" data-pet-type="dog">
+            <div class="media">
+              <img src="https://images.unsplash.com/photo-1561037404-61cd46aa615b?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Rocky, an energetic three-year-old dog available for adoption" width="800" height="600" loading="lazy" decoding="async">
+            </div>
+            <div class="pet-card-body">
+              <h3>Rocky</h3>
+              <dl class="pet-meta">
+                <div class="tag"><dt>Type</dt><dd>Dog</dd></div>
+                <div class="tag tag--age"><dt>Age</dt><dd>3 years</dd></div>
+              </dl>
+              <p>Energetic, confident and always ready for adventure. Rocky loves games of fetch and long walks, and would thrive with an active family and a secure garden.</p>
+              <a class="btn btn-primary" href="contact.html?pet=Rocky">Enquire About Rocky</a>
+            </div>
+          </article>
+
+          <article class="pet-card" data-pet-type="dog">
+            <div class="media">
+              <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Luna, a curious one-year-old dog available for adoption" width="800" height="600" loading="lazy" decoding="async">
+            </div>
+            <div class="pet-card-body">
+              <h3>Luna</h3>
+              <dl class="pet-meta">
+                <div class="tag"><dt>Type</dt><dd>Dog</dd></div>
+                <div class="tag tag--age"><dt>Age</dt><dd>1 year</dd></div>
+              </dl>
+              <p>Curious, bright and eager to please. Luna is still learning her basic training and enjoys meeting other friendly dogs. She needs a patient owner who will continue her training.</p>
+              <a class="btn btn-primary" href="contact.html?pet=Luna">Enquire About Luna</a>
+            </div>
+          </article>
+
+          <article class="pet-card" data-pet-type="cat">
+            <div class="media">
+              <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Milo, a playful one-year-old cat available for adoption" width="800" height="600" loading="lazy" decoding="async">
+            </div>
+            <div class="pet-card-body">
+              <h3>Milo</h3>
+              <dl class="pet-meta">
+                <div class="tag"><dt>Type</dt><dd>Cat</dd></div>
+                <div class="tag tag--age"><dt>Age</dt><dd>1 year</dd></div>
+              </dl>
+              <p>Playful, inquisitive and full of fun. Milo loves chasing toy mice and exploring cardboard boxes, then settling down for a long nap in a sunny spot.</p>
+              <a class="btn btn-primary" href="contact.html?pet=Milo">Enquire About Milo</a>
+            </div>
+          </article>
+
+          <article class="pet-card" data-pet-type="cat">
+            <div class="media">
+              <img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Coco, an affectionate two-year-old cat available for adoption" width="800" height="600" loading="lazy" decoding="async">
+            </div>
+            <div class="pet-card-body">
+              <h3>Coco</h3>
+              <dl class="pet-meta">
+                <div class="tag"><dt>Type</dt><dd>Cat</dd></div>
+                <div class="tag tag--age"><dt>Age</dt><dd>2 years</dd></div>
+              </dl>
+              <p>Sweet-natured, quiet and affectionate. Coco is a true lap cat who enjoys gentle brushing and calm evenings. She would be happiest in a peaceful home.</p>
+              <a class="btn btn-primary" href="contact.html?pet=Coco">Enquire About Coco</a>
+            </div>
+          </article>
+
+          <article class="pet-card" data-pet-type="cat">
+            <div class="media">
+              <img src="https://images.unsplash.com/photo-1495360010541-f48722b34f7d?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Simba, a confident four-year-old cat available for adoption" width="800" height="600" loading="lazy" decoding="async">
+            </div>
+            <div class="pet-card-body">
+              <h3>Simba</h3>
+              <dl class="pet-meta">
+                <div class="tag"><dt>Type</dt><dd>Cat</dd></div>
+                <div class="tag tag--age"><dt>Age</dt><dd>4 years</dd></div>
+              </dl>
+              <p>Confident, independent and observant. Simba enjoys watching the world from a window seat and warms up with patience, becoming a loyal and loving companion.</p>
+              <a class="btn btn-primary" href="contact.html?pet=Simba">Enquire About Simba</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- How enquiries are reviewed -->
+    <section class="section section--white" aria-labelledby="review-heading">
+      <div class="container container--narrow">
+        <div class="highlight-panel">
+          <span class="card-icon card-icon--large" aria-hidden="true">📋</span>
+          <div>
+            <h2 id="review-heading">How We Review Adoption Enquiries</h2>
+            <p>Sending an enquiry does not reserve a pet or guarantee adoption. Every enquiry is read by a member of our adoption team, who will contact you to learn more about your home, routine and experience with animals.</p>
+            <p>Where appropriate, we arrange a meeting with the pet and a short suitability review before any decision is made. This careful process helps each animal settle into a home where they will be safe and happy for life.</p>
+            <a class="btn btn-secondary" href="about.html#process-heading">See Our Adoption Process</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-about">
+        <p class="footer-logo"><span aria-hidden="true">🐾</span> Paws and Homes</p>
+        <p>Paws and Homes Pet Care and Adoption helps rescued dogs and cats find safe, loving and permanent homes, and supports every family after adoption.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <h2 class="footer-heading">Quick Links</h2>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="adopt.html">Adopt a Pet</a></li>
+          <li><a href="care.html">Pet Care</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="footer-contact">
+        <h2 class="footer-heading">Contact Us</h2>
+        <address>
+          <ul class="footer-links">
+            <li><span class="footer-label">Email</span><a href="mailto:hello@pawsandhomes.example">hello@pawsandhomes.example</a></li>
+            <li><span class="footer-label">Telephone</span><a href="tel:+15550142026">+1 555 014 2026</a></li>
+            <li><span class="footer-label">Opening hours</span>Monday to Saturday, 9:00 AM to 5:00 PM</li>
+          </ul>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span data-current-year>2026</span> Paws and Homes Pet Care and Adoption. All rights reserved.</p>
+        <p>Paws and Homes is a fictional organisation created for a website-authoring project.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

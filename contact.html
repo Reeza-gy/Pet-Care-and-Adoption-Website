@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en-GB" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Paws and Homes Pet Care and Adoption</title>
+  <meta name="description" content="Contact Paws and Homes or send an adoption enquiry about one of our dogs or cats.">
+  <meta name="theme-color" content="#164E63">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%90%BE%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html"><span class="logo-icon" aria-hidden="true">🐾</span> Paws and Homes</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="nav-toggle-icon" aria-hidden="true"></span>
+        <span class="nav-toggle-text">Menu</span>
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="adopt.html">Adopt a Pet</a></li>
+          <li><a href="care.html">Pet Care</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+    <!-- Page introduction -->
+    <section class="page-intro" aria-labelledby="page-heading">
+      <div class="container">
+        <p class="eyebrow">Contact</p>
+        <h1 id="page-heading">Contact and Adoption Enquiry</h1>
+        <p class="lead">Have a question, or interested in meeting one of our pets? Use the form below to send an enquiry. Please note that an enquiry does not guarantee adoption; every enquiry is reviewed carefully before any decision is made.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Contact details and enquiry form">
+      <div class="container contact-layout">
+        <!-- Contact details -->
+        <aside class="card" aria-labelledby="details-heading">
+          <h2 id="details-heading">Contact Details</h2>
+          <ul class="contact-list">
+            <li>
+              <span class="card-icon card-icon--small" aria-hidden="true">✉️</span>
+              <div>
+                <h3>Email</h3>
+                <a href="mailto:hello@pawsandhomes.example">hello@pawsandhomes.example</a>
+              </div>
+            </li>
+            <li>
+              <span class="card-icon card-icon--small" aria-hidden="true">📞</span>
+              <div>
+                <h3>Telephone</h3>
+                <a href="tel:+15550142026">+1 555 014 2026</a>
+              </div>
+            </li>
+            <li>
+              <span class="card-icon card-icon--small" aria-hidden="true">🕘</span>
+              <div>
+                <h3>Opening Hours</h3>
+                <p>Monday to Saturday, 9:00 AM to 5:00 PM</p>
+              </div>
+            </li>
+          </ul>
+          <div class="notice notice--info">
+            <span class="notice-icon" aria-hidden="true">🔒</span>
+            <p id="privacy-note"><strong>Privacy:</strong> this is a static demonstration website. Information you enter is checked in your browser only. It is not sent to a server and no personal information is stored.</p>
+          </div>
+        </aside>
+
+        <!-- Enquiry form -->
+        <section class="card form-card" aria-labelledby="form-heading">
+          <h2 id="form-heading">Adoption Enquiry Form</h2>
+          <p class="form-note">Fields marked with an asterisk (<span class="required">*</span>) are required.</p>
+
+          <div id="form-success" class="form-success" tabindex="-1" hidden>
+            <h3>Thank You for Your Enquiry</h3>
+            <p id="success-message">Thank you. All details were completed correctly.</p>
+            <p>Because this is a static demonstration website, your details have not been sent or stored anywhere. For a real enquiry, please email <a href="mailto:hello@pawsandhomes.example">hello@pawsandhomes.example</a> or call <a href="tel:+15550142026">+1 555 014 2026</a>.</p>
+          </div>
+
+          <p id="form-error-summary" class="form-summary" hidden></p>
+
+          <form id="enquiry-form" class="enquiry-form" novalidate aria-describedby="privacy-note">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="full-name">Full Name <span class="required" aria-hidden="true">*</span></label>
+                <input class="form-control" type="text" id="full-name" name="fullName" autocomplete="name" required minlength="2" maxlength="80" aria-describedby="full-name-error">
+                <p class="field-error" id="full-name-error"></p>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address <span class="required" aria-hidden="true">*</span></label>
+                <input class="form-control" type="email" id="email" name="email" autocomplete="email" required maxlength="120" aria-describedby="email-error">
+                <p class="field-error" id="email-error"></p>
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Telephone Number <span class="required" aria-hidden="true">*</span></label>
+                <input class="form-control" type="tel" id="phone" name="phone" autocomplete="tel" inputmode="tel" required minlength="7" maxlength="20" pattern="[0-9+\(\)\-\s]{7,20}" aria-describedby="phone-hint phone-error">
+                <p class="hint" id="phone-hint">Include your country code, for example +1 555 014 2026.</p>
+                <p class="field-error" id="phone-error"></p>
+              </div>
+
+              <div class="form-group">
+                <label for="preferred-pet">Preferred Pet <span class="required" aria-hidden="true">*</span></label>
+                <select class="form-control" id="preferred-pet" name="preferredPet" required aria-describedby="pet-hint preferred-pet-error">
+                  <option value="">Please choose a pet</option>
+                  <optgroup label="Dogs">
+                    <option value="Bella">Bella (Dog, 2 years)</option>
+                    <option value="Rocky">Rocky (Dog, 3 years)</option>
+                    <option value="Luna">Luna (Dog, 1 year)</option>
+                  </optgroup>
+                  <optgroup label="Cats">
+                    <option value="Milo">Milo (Cat, 1 year)</option>
+                    <option value="Coco">Coco (Cat, 2 years)</option>
+                    <option value="Simba">Simba (Cat, 4 years)</option>
+                  </optgroup>
+                  <optgroup label="Other">
+                    <option value="Not sure yet">Not sure yet, I would like advice</option>
+                  </optgroup>
+                </select>
+                <p class="hint" id="pet-hint"></p>
+                <p class="field-error" id="preferred-pet-error"></p>
+              </div>
+
+              <div class="form-group form-group--full">
+                <label for="message">Message <span class="required" aria-hidden="true">*</span></label>
+                <textarea class="form-control" id="message" name="message" rows="6" required minlength="10" maxlength="1000" aria-describedby="message-hint message-error"></textarea>
+                <p class="hint" id="message-hint">Tell us a little about your home, your routine and any experience you have with pets (10 to 1000 characters).</p>
+                <p class="field-error" id="message-error"></p>
+              </div>
+
+              <div class="form-group form-group--full">
+                <div class="checkbox-group">
+                  <input type="checkbox" id="consent" name="consent" required aria-describedby="consent-error">
+                  <label for="consent">I understand that this enquiry does not guarantee adoption, and I agree to be contacted about it. <span class="required" aria-hidden="true">*</span></label>
+                </div>
+                <p class="field-error" id="consent-error"></p>
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <!-- Enabled by js/script.js so the form is never sent without validation -->
+              <button type="submit" class="btn btn-primary" disabled>Send Enquiry</button>
+              <button type="reset" class="btn btn-secondary">Clear Form</button>
+            </div>
+
+            <noscript>
+              <p class="notice mt-lg">Please enable JavaScript to use this demonstration form, or contact us by email or telephone using the details on this page.</p>
+            </noscript>
+          </form>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-about">
+        <p class="footer-logo"><span aria-hidden="true">🐾</span> Paws and Homes</p>
+        <p>Paws and Homes Pet Care and Adoption helps rescued dogs and cats find safe, loving and permanent homes, and supports every family after adoption.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <h2 class="footer-heading">Quick Links</h2>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="adopt.html">Adopt a Pet</a></li>
+          <li><a href="care.html">Pet Care</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="footer-contact">
+        <h2 class="footer-heading">Contact Us</h2>
+        <address>
+          <ul class="footer-links">
+            <li><span class="footer-label">Email</span><a href="mailto:hello@pawsandhomes.example">hello@pawsandhomes.example</a></li>
+            <li><span class="footer-label">Telephone</span><a href="tel:+15550142026">+1 555 014 2026</a></li>
+            <li><span class="footer-label">Opening hours</span>Monday to Saturday, 9:00 AM to 5:00 PM</li>
+          </ul>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span data-current-year>2026</span> Paws and Homes Pet Care and Adoption. All rights reserved.</p>
+        <p>Paws and Homes is a fictional organisation created for a website-authoring project.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
